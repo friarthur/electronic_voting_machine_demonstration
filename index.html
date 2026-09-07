@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
+  <title>Simulação Educacional · Urna Eletrônica</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="app" aria-label="Simulação educacional de urna eletrônica">
+    <!-- cabeçalho institucional -->
+    <header class="urna-header" aria-label="Identificação da simulação">
+      <span class="sim-badge">SIMULAÇÃO EDUCACIONAL</span>
+      <span class="urna-sub">Urna eletrônica — demonstração</span>
+    </header>
+
+    <!-- corpo da urna: tela + teclado -->
+    <section class="urna-body" aria-label="Urna eletrônica simulada">
+      <!-- TELA DA URNA -->
+      <div class="screen" id="screen" aria-live="polite" aria-atomic="true">
+        <!-- conteúdo dinâmico renderizado pelo JS -->
+      </div>
+
+      <!-- TECLADO FÍSICO SIMULADO -->
+      <div class="keyboard" role="group" aria-label="Teclado numérico e ações">
+        <div class="key-row">
+          <button class="key" data-digit="1" aria-label="1">1</button>
+          <button class="key" data-digit="2" aria-label="2">2</button>
+          <button class="key" data-digit="3" aria-label="3">3</button>
+        </div>
+        <div class="key-row">
+          <button class="key" data-digit="4" aria-label="4">4</button>
+          <button class="key" data-digit="5" aria-label="5">5</button>
+          <button class="key" data-digit="6" aria-label="6">6</button>
+        </div>
+        <div class="key-row">
+          <button class="key" data-digit="7" aria-label="7">7</button>
+          <button class="key" data-digit="8" aria-label="8">8</button>
+          <button class="key" data-digit="9" aria-label="9">9</button>
+        </div>
+        <div class="key-row">
+          <button class="key key-blank" disabled aria-label="espaço vazio"></button>
+          <button class="key" data-digit="0" aria-label="0">0</button>
+          <button class="key key-blank" disabled aria-label="espaço vazio"></button>
+        </div>
+        <!-- botões de ação -->
+        <div class="action-row">
+          <button class="action action-blank" id="btnBlank" aria-label="Voto em branco">BRANCO</button>
+          <button class="action action-correct" id="btnCorrect" aria-label="Corrigir">CORRIGE</button>
+          <button class="action action-confirm" id="btnConfirm" aria-label="Confirmar">CONFIRMA</button>
+        </div>
+        <!-- painel de som (opcional) -->
+        <div class="sound-toggle">
+          <label for="soundCheck">🔊 SOM</label>
+          <input type="checkbox" id="soundCheck" checked>
+        </div>
+      </div>
+    </section>
+
+    <!-- rodapé com nota educacional -->
+    <footer class="urna-footer">
+      Esta aplicação é uma simulação educacional independente e não reproduz a implementação interna dos sistemas eleitorais oficiais.
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
