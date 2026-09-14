@@ -1,4 +1,4 @@
-# Urna Eletrônica — Simulação Educacional
+# Urna Eletrônica — Simulação Educacional(simulada)
 
 Uma simulação web educacional do fluxo de votação de uma urna eletrônica brasileira, desenvolvida com **HTML, CSS e JavaScript puro**.
 
