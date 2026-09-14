@@ -1,6 +1,6 @@
 # Urna Eletrônica — Simulação Educacional(simulada)
 
-Uma simulação web educacional do fluxo de votação de uma urna eletrônica brasileira, desenvolvida com **HTML, CSS e JavaScript puro**.
+Uma simulação web educacional do fluxo de votação de uma urna eletrônica brasileira para mostrar como funciona a urna eletronica , desenvolvida com **HTML, CSS e JavaScript puro**.
 
 O projeto foi criado com o objetivo de estudar e demonstrar conceitos de:
 
